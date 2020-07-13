@@ -1,7 +1,6 @@
 package com.utils;
 
 import com.bean.YcConstants;
-import com.service.Impl.UserServiceImpl;
 import com.tencentcloudapi.common.Credential;
 import com.tencentcloudapi.common.exception.TencentCloudSDKException;
 import com.tencentcloudapi.common.profile.ClientProfile;
@@ -9,7 +8,6 @@ import com.tencentcloudapi.common.profile.HttpProfile;
 import com.tencentcloudapi.sms.v20190711.SmsClient;
 import com.tencentcloudapi.sms.v20190711.models.SendSmsRequest;
 import com.tencentcloudapi.sms.v20190711.models.SendSmsResponse;
-import org.jboss.logging.Logger;
 
 public class SmsUtils {
     /**
