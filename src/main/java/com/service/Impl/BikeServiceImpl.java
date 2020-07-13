@@ -121,7 +121,8 @@ public class BikeServiceImpl extends ServiceImpl<BikeMapper, Bike> implements Bi
 
     private Map<String, String> addRepairLogs(Repair repair) {
         RestTemplate restTemplate = new RestTemplate();
-        String key = "IE2BZ-3BDR6-RYUSI-E3L5J-PXC4H-K7FD4";
+        // 密钥
+        String key = "";
         String url = "https://apis.map.qq.com/ws/geocoder/v1/?key=" + key
                 + "&location=" + repair.getLatitude() + "," + repair.getLongitude();
         Map<String, Object> map = new HashMap<>();
